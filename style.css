@@ -1,0 +1,38 @@
+#rectangle {
+    position: absolute;
+    transform:translate(450px,0px);
+    margin-top:50px;
+    
+}
+button  {
+    width:30px;
+    height:20px;
+}
+.align_div {
+    position: absolute;
+    transform: translate(300px,0px);
+}
+input {
+    background-color:rgba(0,0,0,0);
+    width:300px;
+    height:35px;
+    margin-top:10px;   
+    border:none;
+    outline:none;
+    font-size: 30px;
+    line-height: normal;
+    
+}
+#howToUseThis{
+    font-size: 10px;
+}
+    
+.input-border {
+    text-align:center;
+    margin-top:100px;
+    border:1px solid;
+    width:300px;
+    height:50px;
+    border-style: double;
+    border-width: 10px;
+}
