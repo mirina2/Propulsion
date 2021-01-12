@@ -22,15 +22,6 @@ function CoordinatePlane(){
     rctx.fill();
     rctx.closePath();
     
-    /*
-    rctx.arc(200,200,3,0 * Math.PI/180, 360 * Math.PI/180,false);
-    rctx.fill();
-    
-    rctx.font="20px Arial";
-    rctx.fillText("O",203,220)
-    rctx.font="10px Arial";
-    rctx.fillText("(0,0)",219,220)//원점 O 표시
-    */
    rctx.font="20px Arial";
    rctx.fillText("x",390,220);//x 표시
    rctx.fillText("y",210,15)//y 표시
@@ -38,6 +29,7 @@ function CoordinatePlane(){
    rctx.stroke();//원점 그리기
      
     }
+
     function drawCircle(xyrInfo) {
         var rectangle_display = document.getElementById("rectangle");
         var ctx = rectangle_display.getContext("2d");//렌더링 컨텍스트 가져오기(색연필 가져오기(??))
@@ -45,11 +37,6 @@ function CoordinatePlane(){
          var xyrInfo = xyrInfo.value;
          var xyr = xyrInfo.split(",");
          var zeroExist = xyrInfo.indexOf(".");
-         console.log(zeroExist);
-         if (zeroExist !== -1) {
-            console.log("hi")
-         }
-         
 
          var xPosit = JSON.parse(xyr[0])+200;
          var yPosit = JSON.parse(xyr[1])+200;
@@ -73,23 +60,3 @@ function CoordinatePlane(){
         CircleEquationP.innerHTML = ("생성될수 없는 원의 방정식입니다!");
     } 
 }
-    /*
-    rctx.beginPath();
-    rctx.moveTo(60,120);
-    rctx.lineTo(110,210);
-    rctx.lineTo(10,210);
-    rctx.fill();
-    *///채워진 삼각형
-    /*
-    rctx.strokeRect(50,60,200,100);
-    //사각형
-    */
-    
-    /*
-    rctx.beginPath();
-    rctx.moveTo(60,10);
-    rctx.lineTo(10,100);
-    rctx.lineTo(110,100);
-    rctx.closePath();
-    rctx.stroke(); // 삼각형
-    */
