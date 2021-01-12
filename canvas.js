@@ -39,13 +39,13 @@ function CoordinatePlane(){
          var zeroExist = xyrInfo.indexOf(".");
 
          var xPosit = JSON.parse(xyr[0])+200;
-         var yPosit = JSON.parse(xyr[1])+200;
+         var yPosit = -JSON.parse(xyr[1])+200;
          var input_radius = JSON.parse(xyr[2]);
          var equation_radius = Math.pow(input_radius,2);
 
          ctx.beginPath();
          var radians_ing = Math.PI/180;
-         ctx.arc(xPosit,-yPosit,input_radius,0 * radians_ing, 360 * radians_ing,false);
+         ctx.arc(xPosit,yPosit,input_radius,0 * radians_ing, 360 * radians_ing,false);
         ctx.stroke();
 
         var CircleEquationP = document.getElementById("last_CircleEquation");
