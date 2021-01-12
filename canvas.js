@@ -45,7 +45,7 @@ function CoordinatePlane(){
 
          ctx.beginPath();
          var radians_ing = Math.PI/180;
-         ctx.arc(xPosit,yPosit,input_radius,0 * radians_ing, 360 * radians_ing,false);
+         ctx.arc(xPosit,-yPosit,input_radius,0 * radians_ing, 360 * radians_ing,false);
         ctx.stroke();
 
         var CircleEquationP = document.getElementById("last_CircleEquation");
