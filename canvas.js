@@ -54,7 +54,7 @@ function CoordinatePlane(){
         if(xPosit == 200, yPosit == 200) {
             CircleEquationP.innerHTML = (`x^2 + y^2 = ${equation_radius}`)
         } else {
-            CircleEquationP.innerHTML = (`(x- ${xPosit-200})^2 + (y- ${yPosit-200})^2 = ${equation_radius}`);//원방 표시
+            CircleEquationP.innerHTML = (`(x- ${xPosit-200})^2 + (y- ${-yPosit-200})^2 = ${equation_radius}`);//원방 표시
         
     }  if(xPosit == 200, yPosit == 200, input_radius == 0){
         CircleEquationP.innerHTML = ("생성될수 없는 원의 방정식입니다!");
